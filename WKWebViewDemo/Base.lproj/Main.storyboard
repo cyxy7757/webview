@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0nf-r6-h9w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QMb-Ta-7kd"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKm-6i-QxJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ac-p2-0B0">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="button1" id="HXF-yI-fyB">
+                                        <connections>
+                                            <action selector="ocCallJSOne:" destination="BYZ-38-t0r" id="sdL-mb-a0a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="button2" id="89v-MD-IPy">
+                                        <connections>
+                                            <action selector="ocCallJSTwo:" destination="BYZ-38-t0r" id="8hc-gE-dWM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="button3" id="OUM-vu-NKO">
+                                        <connections>
+                                            <action selector="ocCallJSThree:" destination="BYZ-38-t0r" id="WCy-ri-wMo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7ac-p2-0B0" secondAttribute="trailing" id="4t1-Fg-Hlp"/>
+                            <constraint firstItem="tKm-6i-QxJ" firstAttribute="top" secondItem="7ac-p2-0B0" secondAttribute="bottom" id="8oX-hG-QNA"/>
+                            <constraint firstItem="7ac-p2-0B0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ERu-oN-b39"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="f6y-OQ-gwB">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="undo" id="mCU-CQ-Ix4">
+                                <connections>
+                                    <action selector="undo:" destination="BYZ-38-t0r" id="sTf-88-zO1"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="redo" id="CNb-7M-9Tg">
+                                <connections>
+                                    <action selector="redo:" destination="BYZ-38-t0r" id="C6b-FL-HOu"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="FnG-GT-NZJ">
+                            <connections>
+                                <action selector="refreshWeb:" destination="BYZ-38-t0r" id="8N3-CL-uLT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="toolBar" destination="7ac-p2-0B0" id="AIs-eg-cMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="-273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YGN-yV-eVn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0nf-r6-h9w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Te6-Pj-JEI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WoW-PB-7YO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sm-QY-ivM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>
