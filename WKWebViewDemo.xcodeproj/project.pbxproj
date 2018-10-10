@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A18F1B4216DE44E0002B818 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18F1B3216DE44E0002B818 /* UIWebViewController.m */; };
+		0A18F1BA216DEB730002B818 /* MyJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18F1B9216DEB730002B818 /* MyJSObject.m */; };
+		0A18F1BC216DF1880002B818 /* index_2.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A18F1BB216DF1880002B818 /* index_2.html */; };
 		0A29A19E216B470D008B2456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29A19D216B470D008B2456 /* AppDelegate.m */; };
 		0A29A1A1216B470D008B2456 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29A1A0216B470D008B2456 /* ViewController.m */; };
 		0A29A1A4216B470D008B2456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A29A1A2216B470D008B2456 /* Main.storyboard */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A18F1B2216DE44E0002B818 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		0A18F1B3216DE44E0002B818 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		0A18F1B7216DEB1B0002B818 /* PersonJSExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonJSExport.h; sourceTree = "<group>"; };
+		0A18F1B8216DEB730002B818 /* MyJSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyJSObject.h; sourceTree = "<group>"; };
+		0A18F1B9216DEB730002B818 /* MyJSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyJSObject.m; sourceTree = "<group>"; };
+		0A18F1BB216DF1880002B818 /* index_2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index_2.html; path = ../../JSDemo/index_2.html; sourceTree = "<group>"; };
 		0A29A199216B470D008B2456 /* WKWebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A29A19C216B470D008B2456 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A29A19D216B470D008B2456 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,12 +81,18 @@
 		0A29A19B216B470D008B2456 /* WKWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0A18F1BB216DF1880002B818 /* index_2.html */,
 				0AEE32C8216C87EA0085DE28 /* index_1.html */,
 				0AEE32C6216C66140085DE28 /* index.html */,
 				0A29A19C216B470D008B2456 /* AppDelegate.h */,
 				0A29A19D216B470D008B2456 /* AppDelegate.m */,
 				0A29A19F216B470D008B2456 /* ViewController.h */,
 				0A29A1A0216B470D008B2456 /* ViewController.m */,
+				0A18F1B2216DE44E0002B818 /* UIWebViewController.h */,
+				0A18F1B3216DE44E0002B818 /* UIWebViewController.m */,
+				0A18F1B7216DEB1B0002B818 /* PersonJSExport.h */,
+				0A18F1B8216DEB730002B818 /* MyJSObject.h */,
+				0A18F1B9216DEB730002B818 /* MyJSObject.m */,
 				0AC23C71216C36F3005B9E9B /* changeName */,
 				0A29A1B2216B5661008B2456 /* NSString+urlEncode.h */,
 				0A29A1B3216B5661008B2456 /* NSString+urlEncode.m */,
@@ -176,6 +191,7 @@
 				0AEE32C9216C87EA0085DE28 /* index_1.html in Resources */,
 				0AEE32C7216C66140085DE28 /* index.html in Resources */,
 				0A29A1A6216B470E008B2456 /* Assets.xcassets in Resources */,
+				0A18F1BC216DF1880002B818 /* index_2.html in Resources */,
 				0A29A1A4216B470D008B2456 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +231,8 @@
 				0A29A1A1216B470D008B2456 /* ViewController.m in Sources */,
 				0A29A1AC216B470E008B2456 /* main.m in Sources */,
 				0A29A19E216B470D008B2456 /* AppDelegate.m in Sources */,
+				0A18F1BA216DEB730002B818 /* MyJSObject.m in Sources */,
+				0A18F1B4216DE44E0002B818 /* UIWebViewController.m in Sources */,
 				0A29A1B4216B5661008B2456 /* NSString+urlEncode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

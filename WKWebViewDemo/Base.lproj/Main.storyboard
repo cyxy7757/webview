@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0nf-r6-h9w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qDf-LZ-qHM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ac-p2-0B0">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
                                 <items>
                                     <barButtonItem title="button1" id="HXF-yI-fyB">
                                         <connections>
@@ -74,12 +74,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273" y="-273"/>
+            <point key="canvasLocation" x="1247" y="-555"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--WKWebView-->
         <scene sceneID="YGN-yV-eVn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0nf-r6-h9w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="WKWebView" id="t39-oe-L7o"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Te6-Pj-JEI">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -92,7 +93,101 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sm-QY-ivM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="-564.46776611694156"/>
+            <point key="canvasLocation" x="425" y="-589"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="tUq-LA-FyD">
+            <objects>
+                <viewController id="1WG-fG-xB8" customClass="UIWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aHe-VE-b29"/>
+                        <viewControllerLayoutGuide type="bottom" id="CnI-PB-ega"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nC0-eg-Z3c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-Iv-pgk">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="button1" id="z9i-ik-vmt">
+                                        <connections>
+                                            <action selector="btnOne:" destination="1WG-fG-xB8" id="K6p-9f-jXE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="button2" id="JZd-G2-eN8" userLabel="button2">
+                                        <connections>
+                                            <action selector="btnTwo:" destination="1WG-fG-xB8" id="dLE-S0-Kgq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="button3" id="a5m-kC-xYp" userLabel="button3">
+                                        <connections>
+                                            <action selector="btnThree:" destination="1WG-fG-xB8" id="RfG-tU-wAj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YL8-Iv-pgk" secondAttribute="trailing" id="his-sm-RLR"/>
+                            <constraint firstItem="CnI-PB-ega" firstAttribute="top" secondItem="YL8-Iv-pgk" secondAttribute="bottom" id="lre-NK-dpE"/>
+                            <constraint firstItem="YL8-Iv-pgk" firstAttribute="leading" secondItem="nC0-eg-Z3c" secondAttribute="leading" id="tt3-lW-c3a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FS1-LS-xQf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fo9-Gd-yeQ">
+                            <connections>
+                                <action selector="refresh:" destination="1WG-fG-xB8" id="vtN-aD-SSJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="toolBar" destination="YL8-Iv-pgk" id="8Eq-tm-Jg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsw-wv-8Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="195.6521739130435"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d6q-4h-l4c">
+            <objects>
+                <tabBarController id="qDf-LZ-qHM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AZg-Z6-h42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dOx-wo-DgS" kind="relationship" relationship="viewControllers" id="N6l-Vv-w7F"/>
+                        <segue destination="0nf-r6-h9w" kind="relationship" relationship="viewControllers" id="eQW-qO-vnO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rg-B7-7xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446" y="-588"/>
+        </scene>
+        <!--UIWebView-->
+        <scene sceneID="J7a-ec-zTC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dOx-wo-DgS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UIWebView" id="dG1-dM-9ob">
+                        <color key="badgeColor" red="0.99607843139999996" green="0.34901960780000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZD-N1-xUf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1WG-fG-xB8" kind="relationship" relationship="rootViewController" id="5Cc-eE-UED"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYi-wy-Ukw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="195.6521739130435"/>
         </scene>
     </scenes>
 </document>
